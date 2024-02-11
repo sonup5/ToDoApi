@@ -14,7 +14,7 @@ For Frontend inputBox should be named like this:
 
 ![1707648200861](image/README/1707648200861.png)
 
-# create To-do route
+# create task route
 
 This route basically post to-do from client to Database server
 
@@ -32,7 +32,7 @@ For front-end it must contains all the three inputBoxes
 
  Note: username must be provided in params  like this `api/createToDo/sonu36437`
 
-# Get all to-do of user 
+# Get all task of user
 
 This will give you all the to-do's of a particular user 
 
@@ -42,7 +42,7 @@ Example : `http://localhost:5000/api/allToDos/sonu36437`
 
 ![1707649328218](image/README/1707649328218.png)
 
-# Delete a particular to-do
+# Delete a particular task
 
 This is a Delete route it will delete a particular  to-do having particular id each to-do have unique id you can look at the image in `GET all to-do route` each task have a unique id 
 
@@ -50,7 +50,7 @@ DELETE : `api/deletetodo/id`
 
 Example : `http://localhost:5000/api/deletetodo/65c76ee4b85d66f4f210258b`
 
-# update To-do route
+# update particular task route
 
 Either task is completed or user want to edit someData.
 
