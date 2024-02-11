@@ -7,6 +7,7 @@ const userRoute=require('./routes/user')
 const postTodo=require('./routes/postTodos');
 const getToDo=require('./routes/getAllTodos')
 const deleteToDo=require('./routes/deleteToDo')
+const updateToDo=require('./routes/updateToDo')
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -24,6 +25,8 @@ app.use('/api',postTodo);
 app.use('/api',getToDo)
 //delete particular todo item with object id 
 app.use('/api',deleteToDo);
+//update todo item with object id
+app.use('/api',updateToDo);
 
 
 
