@@ -1,6 +1,7 @@
 const express = require("express");
 const app= express();
 
+
 const mongoose = require("mongoose");
 const userRoute=require('./routes/user')
 const postTodo=require('./routes/postTodos');
@@ -12,6 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 mongoose.connect("mongodb://127.0.0.1:27017/toDoApp").then(() => {
   console.log("connected to database");
 });
+
+
 
 /// create a new user
 app.use('/api',userRoute);
